@@ -1,0 +1,29 @@
+#title {
+  font-size: 7vmin;
+  margin: 1vh 0 0 0;
+}
+.kekka {
+  font-size: 6vmin;
+}
+.box {
+  padding: 3vmin;
+  margin: 0 5vmax;
+  border: 2px solid #b6694b;
+  border-radius: 30px;
+  font-size: 6vmin;
+  background-color: white;
+}
+#omikuji {
+  font-size: 9vmin;
+}
+.itembox {
+  padding: 2vmin;
+}
+input {
+  margin: 2vmax;
+  font-size: 4vmin;
+}
+.kekka-message {
+  font-size: 5vmin;
+  margin: 5vw 0 0 0;
+}

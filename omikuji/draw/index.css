@@ -1,0 +1,25 @@
+.omikuji-size {
+  height: 80vmin;
+  width: 80vmin;
+}
+
+.omikuji-animation{
+  animation:10s linear infinite rotation;
+}
+
+#draw-button {
+  margin: 0 0 2vmax 0;
+}
+
+@keyframes rotation{
+  0%{ transform:rotate(0);}
+  5%{ transform:rotate(-30deg);}
+  15%{ transform:rotate(30deg);}
+  25%{ transform:rotate(-30deg);}
+  35%{ transform:rotate(30deg);}
+  45%{ transform:rotate(-30deg);}
+  55%{ transform:rotate(30deg);}
+  60%{ transform:rotate(30deg);}
+  80%{ transform:rotate(180deg); }
+  100%{ transform:rotate(180deg); }
+}

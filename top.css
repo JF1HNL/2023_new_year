@@ -1,0 +1,17 @@
+.tora {
+  height: 95vmin;
+  width: 95vmin;
+  margin: 5px;
+}
+.title {
+  font-weight: bold;
+  background-color: white;
+  font-size: 7vw;
+  padding: 3vmin;
+  margin: 3vmin;
+  border: 2px solid #b6694b;
+  border-radius: 30px;
+}
+.message{
+  font-size: 5vmin;
+}
