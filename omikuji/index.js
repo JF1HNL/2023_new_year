@@ -64,7 +64,7 @@ function getUrlData(){
       .replaceAll('=',`":"`)
     }"}`)
     Object.keys(omikujiData).filter(it => it !== "omikuji").forEach(e => {
-      url_param[e] = url_param[e].replace("_", "%") // %はtwitterカードに引っかかるために_を使う。もとに戻している。
+      url_param[e] = url_param[e].replaceAll("_", "%") // %はtwitterカードに引っかかるために_を使う。もとに戻している。
       if(omikujiData[e].indexOf(url_param[e]) === -1){
         throw new Error('データがない');
       }
@@ -116,7 +116,7 @@ function omikujiHiku(){
 }
 
 function makeURL(obj){
-  return `${window.location.href.split('?')[0]}?omikuji=${obj.omikuji.replace("%", "_")}&negai=${obj.negai.replace("%", "_")}&kinun=${obj.kinun.replace("%", "_")}&syobu=${obj.syobu.replace("%", "_")}&lucky=${obj.lucky.replace("%", "_")}`
+  return `${window.location.href.split('?')[0]}?omikuji=${obj.omikuji.replaceAll("%", "_")}&negai=${obj.negai.replaceAll("%", "_")}&kinun=${obj.kinun.replaceAll("%", "_")}&syobu=${obj.syobu.replaceAll("%", "_")}&lucky=${obj.lucky.replaceAll("%", "_")}`
 }
 
 function tweet(obj) {
