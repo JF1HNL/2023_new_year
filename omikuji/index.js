@@ -38,9 +38,9 @@ function main(){
     const sakunenParent = document.createElement("div")
     sakunenParent.id = "sakunen"
     const sakunenButton = document.createElement("input")
-    sakunenButton.value = "2021年のおみくじを確認する"
+    sakunenButton.value = "2022年のおみくじを確認する"
     sakunenButton.type = "button"
-    sakunenButton.onclick = function(){window.open("https://jf1hnl.github.io/2021_new_year/omikuji/")}
+    sakunenButton.onclick = function(){window.open("https://jf1hnl.github.io/2022_new_year/omikuji/")}
     sakunenParent.appendChild(sakunenButton)
     document.body.appendChild(sakunenParent)
   }else{
@@ -121,8 +121,8 @@ function makeURL(obj){
 function tweet(obj) {
   const content = {
     url: makeURL(obj), // window.location.href,
-    text: `おみくじの結果は【${obj.omikuji.decrypt()}】でした！\n詳しくはこちら！ @jf1hnl`,
-    tag: "kimおみくじ2022"
+    text: `おみくじの結果は【${obj.omikuji.decrypt()}】でした！\n詳しくはこちら！ @open_kim_`,
+    tag: ["kimおみくじ2023", "おみくじ"]
   };
   for (let key in content) {
     content[key] = encodeURIComponent(content[key]);
